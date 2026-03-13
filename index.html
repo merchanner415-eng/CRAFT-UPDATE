@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justine Lee Dionaldo | Official</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #050505;
+            --card: #111111;
+            --accent: #00d2ff;
+            --text: #ffffff;
+            --text-dim: #a0a0a0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            scroll-behavior: smooth;
+        }
+
+        /* --- Navigation --- */
+        nav {
+            padding: 2rem 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            background: rgba(5, 5, 5, 0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        .logo { font-size: 1.5rem; font-weight: 700; letter-spacing: -1px; }
+
+        /* --- Hero Section --- */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 10%;
+            background: radial-gradient(circle at 80% 20%, #00d2ff15, transparent 25%);
+        }
+
+        .hero h1 { font-size: clamp(3rem, 8vw, 6rem); line-height: 0.9; margin-bottom: 20px; }
+        .hero p { font-size: 1.2rem; color: var(--text-dim); max-width: 500px; margin-bottom: 30px; }
+
+        /* --- Contact Section --- */
+        .contact-section {
+            padding: 100px 10%;
+            background: var(--card);
+            border-top: 1px solid #222;
+        }
+
+        .contact-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 15px;
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            color: white;
+            font-size: 1rem;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input:focus, textarea:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 10px rgba(0, 210, 255, 0.2);
+        }
+
+        button {
+            padding: 15px;
+            background: var(--accent);
+            color: black;
+            border: none;
+            border-radius: 8px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+            filter: brightness(1.1);
+        }
+
+        /* --- Social Footer --- */
+        footer {
+            padding: 60px 10%;
+            text-align: center;
+            border-top: 1px solid #222;
+        }
+
+        .yt-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: #ff0000; /* YouTube Red */
+            font-size: 1.2rem;
+            font-weight: 600;
+            padding: 10px 20px;
+            border: 1px solid #ff000033;
+            border-radius: 50px;
+            transition: 0.3s;
+        }
+
+        .yt-link:hover {
+            background: #ff000011;
+            transform: scale(1.05);
+        }
+
+        .copyright { margin-top: 30px; color: var(--text-dim); font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">JLD.</div>
+    </nav>
+
+    <section class="hero">
+        <h1>CREATIVE<br><span style="color: var(--accent);">CONTENT.</span></h1>
+        <p>Digital creator and strategist. Crafting visual experiences that matter.</p>
+        <a href="#contact" style="color: var(--accent); text-decoration: none; font-weight: 700;">Scroll to Connect ↓</a>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <h2 style="margin-bottom: 30px; font-size: 2.5rem;">Send an Email</h2>
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <h3 style="margin-bottom: 20px;">Check out my Channel</h3>
+        <a href="https://www.youtube.com/@justineleedionaldo-i3q" target="_blank" class="yt-link">
+            <span></span> YouTube: @justineleedionaldo-i3q
+        </a>
+        <div class="copyright">
+            &copy; 2024 Justine Lee Dionaldo. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
